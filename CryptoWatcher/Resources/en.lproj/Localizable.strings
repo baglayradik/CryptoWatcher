@@ -1,0 +1,43 @@
+TabBar.ExchangeRates = "Exchange rates";
+TabBar.Converter = "Converter";
+
+Converter.Title = "Converter";
+Converter.FirstCurrencyField.Placeholder = "First coin";
+Converter.SecondCurrencyField.Placeholder = "Second coin";
+Converter.Alert.Title = "Error";
+Converter.Alert.Message = "We have no information about this currency";
+Converter.Alert.OkButton = "Ok";
+
+ExchangeRatesPreferences.Save = "Save";
+
+NewCurrency.Title = "New currency";
+NewCurrency.DoubleTrackedCoinError.Title = "Error";
+NewCurrency.DoubleTrackedCoinError.Description = "You are trying to add already tracked currency";
+NewCurrency.DoubleTrackedCoinError.OkButton = "Ok";
+NewCurrency.PickCurrencyLabel = "Pick currency";
+
+ExchangeRatesPreferences.BaseCurrencyLabel = "Base currency";
+
+Shared.DecimalDelimeter = ".";
+Shared.Preferences = "Preferences";
+
+ExchangeRates.Delete = "Delete";
+ExchangeRates.Alert.title = "Ooops";
+ExchangeRates.Alert.okButton = "Ok";
+ExchangeRates.CoinName = "Coin name (code)";
+ExchangeRates.Price = "Price";
+ExchangeRates.Hours = "24h";
+
+Detail.Day = "Day";
+Detail.Week = "Week";
+Detail.Month = "Month";
+Detail.ThreeMonth = "3 mon.";
+Detail.SixMonth = "6 mon.";
+Detail.Year = "Year";
+
+Detail.Price = "Price";
+Detail.Volume = "Volume 24h";
+Detail.MarketCup = "Market Cup";
+Detail.CoinsAvailable = "Coins available";
+Detail.Change = "% change 24h";
+

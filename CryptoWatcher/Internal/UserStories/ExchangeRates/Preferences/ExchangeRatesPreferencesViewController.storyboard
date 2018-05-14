@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exchange Rates Preferences View Controller-->
+        <scene sceneID="jqH-cZ-xjC">
+            <objects>
+                <viewController storyboardIdentifier="ExchangeRatesPreferencesViewController" id="HEc-GP-6PA" customClass="ExchangeRatesPreferencesViewController" customModule="CryptoWatcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vAa-2k-bee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0BP-Pt-Ch6">
+                                <rect key="frame" x="20" y="40" width="335" height="68.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOt-3g-1Uu">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KJx-27-5W3">
+                                        <rect key="frame" x="0.0" y="40.5" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0BP-Pt-Ch6" firstAttribute="top" secondItem="j2n-sR-MM2" secondAttribute="top" constant="20" id="0Qp-E8-Xs0"/>
+                            <constraint firstItem="j2n-sR-MM2" firstAttribute="trailing" secondItem="0BP-Pt-Ch6" secondAttribute="trailing" constant="20" id="oGu-DD-Jol"/>
+                            <constraint firstItem="0BP-Pt-Ch6" firstAttribute="leading" secondItem="j2n-sR-MM2" secondAttribute="leading" constant="20" id="pR3-FR-8Cg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j2n-sR-MM2"/>
+                    </view>
+                    <connections>
+                        <outlet property="baseCurrencyLabel" destination="KOt-3g-1Uu" id="6ig-k5-7dk"/>
+                        <outlet property="baseCurrencyPicker" destination="KJx-27-5W3" id="ME2-Bp-I3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuO-6z-tAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430" y="-359"/>
+        </scene>
+    </scenes>
+</document>

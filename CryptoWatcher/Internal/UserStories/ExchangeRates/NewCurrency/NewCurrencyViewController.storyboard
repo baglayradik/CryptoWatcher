@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Currency View Controller-->
+        <scene sceneID="knn-os-byD">
+            <objects>
+                <viewController storyboardIdentifier="NewCurrencyViewController" id="gcL-dI-Uk8" customClass="NewCurrencyViewController" customModule="CryptoWatcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F7Q-9v-w33">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите валюту" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7T-UF-7lR">
+                                <rect key="frame" x="30" y="50" width="315" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXv-YI-AgR">
+                                <rect key="frame" x="30" y="101" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nwC-I8-Qoy">
+                                <rect key="frame" x="177" y="298" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C0K-5Z-fZ5" firstAttribute="trailing" secondItem="CXv-YI-AgR" secondAttribute="trailing" constant="30" id="1SS-yp-ZgQ"/>
+                            <constraint firstItem="A7T-UF-7lR" firstAttribute="top" secondItem="C0K-5Z-fZ5" secondAttribute="top" constant="30" id="2pA-dZ-8X2"/>
+                            <constraint firstItem="CXv-YI-AgR" firstAttribute="top" secondItem="A7T-UF-7lR" secondAttribute="bottom" constant="30" id="OpW-Xk-ZUa"/>
+                            <constraint firstItem="C0K-5Z-fZ5" firstAttribute="trailing" secondItem="A7T-UF-7lR" secondAttribute="trailing" constant="30" id="WSE-IN-tKy"/>
+                            <constraint firstItem="CXv-YI-AgR" firstAttribute="leading" secondItem="C0K-5Z-fZ5" secondAttribute="leading" constant="30" id="oGZ-Iz-Ocj"/>
+                            <constraint firstItem="A7T-UF-7lR" firstAttribute="leading" secondItem="C0K-5Z-fZ5" secondAttribute="leading" constant="30" id="u0E-aO-3dS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C0K-5Z-fZ5"/>
+                    </view>
+                    <connections>
+                        <outlet property="currencyNameTextField" destination="CXv-YI-AgR" id="LJ8-se-YSz"/>
+                        <outlet property="pickCurrencyLabel" destination="A7T-UF-7lR" id="yuu-Pi-9dX"/>
+                        <outlet property="spinner" destination="nwC-I8-Qoy" id="oqY-7I-aWb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUj-bB-Gm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="-196"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Converter View Controller-->
+        <scene sceneID="Sw4-ee-hSA">
+            <objects>
+                <viewController storyboardIdentifier="ConverterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p1S-x4-mmJ" customClass="ConverterViewController" customModule="CryptoWatcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y84-RO-EQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-Ra-wEe">
+                                <rect key="frame" x="20" y="40" width="335" height="225"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFp-c4-fsu">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hjl-7g-gLq">
+                                        <rect key="frame" x="0.0" y="50" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="p1S-x4-mmJ" id="iYg-fu-biP"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="converterArrows" translatesAutoresizingMaskIntoConstraints="NO" id="quv-TU-3Er">
+                                        <rect key="frame" x="0.0" y="100" width="335" height="25"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SecondCoin" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfj-l0-W4W">
+                                        <rect key="frame" x="0.0" y="145" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SxA-dg-TBN">
+                                        <rect key="frame" x="0.0" y="195" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="p1S-x4-mmJ" id="Mw6-Ve-PIi"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Yxt-5W-Ym6">
+                                <rect key="frame" x="177" y="228" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e2a-a3-1bn" firstAttribute="trailing" secondItem="Roh-Ra-wEe" secondAttribute="trailing" constant="20" id="3o4-Ru-yYo"/>
+                            <constraint firstItem="Roh-Ra-wEe" firstAttribute="top" secondItem="e2a-a3-1bn" secondAttribute="top" constant="20" id="b8L-Qp-P6A"/>
+                            <constraint firstItem="Roh-Ra-wEe" firstAttribute="leading" secondItem="e2a-a3-1bn" secondAttribute="leading" constant="20" id="gOx-TV-iHW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e2a-a3-1bn"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstCurrencyField" destination="hjl-7g-gLq" id="XF5-e3-iT5"/>
+                        <outlet property="firstCurrencyPicker" destination="WFp-c4-fsu" id="kQp-td-wos"/>
+                        <outlet property="secondCurrencyField" destination="SxA-dg-TBN" id="TKz-az-aiO"/>
+                        <outlet property="secondCurrencyPicker" destination="Qfj-l0-W4W" id="ayG-gY-TCx"/>
+                        <outlet property="spinner" destination="Yxt-5W-Ym6" id="im4-25-sas"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqc-7o-3So" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="-148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="converterArrows" width="25" height="25"/>
+    </resources>
+</document>

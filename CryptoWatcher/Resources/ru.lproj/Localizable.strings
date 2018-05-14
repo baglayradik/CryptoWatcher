@@ -1,0 +1,44 @@
+TabBar.ExchangeRates = "Курсы обмена";
+TabBar.Converter = "Конвертер";
+
+Converter.Title = "Конвертер валют";
+Converter.FirstCurrencyField.Placeholder = "Первая валюта";
+Converter.SecondCurrencyField.Placeholder = "Вторая валюта";
+Converter.Alert.Title = "Ошибка";
+Converter.Alert.Message = "У нас нет информации об этой валюте";
+Converter.Alert.OkButton = "Ок";
+
+ExchangeRatesPreferences.Save = "Сохранить";
+ExchangeRatesPreferences.Back = "Назад";
+
+ExchangeRatesPreferences.BaseCurrencyLabel = "Основная валюта";
+
+NewCurrency.Title = "Новая валюта";
+NewCurrency.DoubleTrackedCoinError.Title = "Ошибка";
+NewCurrency.DoubleTrackedCoinError.Description = "Вы пытаетесь добавить уже отслеживаемую валюту";
+NewCurrency.DoubleTrackedCoinError.OkButton = "Хорошо";
+NewCurrency.PickCurrencyLabel = "Выберите валюту";
+
+Shared.DecimalDelimeter = ",";
+Shared.Preferences = "Настройки";
+
+ExchangeRates.Delete = "Удалить";
+ExchangeRates.Alert.title = "Упс,что-то пошло не так";
+ExchangeRates.Alert.okButton = "Хорошо";
+ExchangeRates.CoinName = "Название валюты (код)";
+ExchangeRates.Price = "Цена";
+ExchangeRates.Hours = "24ч";
+
+Detail.Day = "День";
+Detail.Week = "Неделя";
+Detail.Month = "Месяц";
+Detail.ThreeMonth = "3 мес";
+Detail.SixMonth = "6 мес";
+Detail.Year = "Год";
+
+
+Detail.Price = "Цена";
+Detail.Volume = "Объем 24ч";
+Detail.MarketCup = "Рыноч.кап.";
+Detail.CoinsAvailable = "Доступно монет";
+Detail.Change = "% изм. за 24 ч";
